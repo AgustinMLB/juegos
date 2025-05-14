@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #eef;
+}
+
+#juego {
+  width: 220px;
+  height: 220px;
+  margin: 20px auto;
+  position: relative;
+  background-color: #f4f4f4;
+  border: 2px solid #000;
+}
+
+#bit {
+  width: 20px;
+  height: 20px;
+  background-color: #4caf50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+#objetivo {
+  width: 20px;
+  height: 20px;
+  background-color: #ff5722;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.obstaculo {
+  width: 20px;
+  height: 20px;
+  background-color: #222;
+  position: absolute;
+}

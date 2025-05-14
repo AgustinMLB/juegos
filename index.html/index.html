@@ -2,22 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ordena los Números</title>
-  <link rel="stylesheet" href="ordena-numeros.css">
+  <title>Bit Viajero</title>
+  <link rel="stylesheet" href="bit-viajero.css">
 </head>
 <body>
-  <div class="contenedor">
-    <h1>Ordena los Números</h1>
-    <p>Hacé clic en los números del 1 al 5 en orden.</p>
+  <h1>🚀 Bit Viajero</h1>
+  <p>Usá las flechas del teclado para mover a Bit. Llegá al portal sin chocar con los obstáculos.</p>
 
-    <div id="numeros" class="numeros">
-      <!-- Se insertan los números con JS -->
-    </div>
-
-    <div id="mensaje" class="mensaje"></div>
-    <div id="puntos" class="puntos">Puntos: 0</div>
+  <div id="juego">
+    <div id="bit"></div>
+    <div id="objetivo"></div>
+    <div class="obstaculo" style="top: 60px; left: 60px;"></div>
+    <div class="obstaculo" style="top: 100px; left: 60px;"></div>
   </div>
 
-  <script src="ordena-numeros.js"></script>
+  <script src="bit-viajero.js"></script>
 </body>
 </html>

@@ -1,18 +1,19 @@
 {
-  "ordena-numeros": {
-    "nombre": "Ordena los Números",
-    "descripcion": "Juego simple que enseña el orden lógico de los números.",
+  "bit-viajero": {
+    "nombre": "Bit Viajero",
+    "descripcion": "Juego interactivo que introduce instrucciones condicionales para mover un personaje llamado Bit por un laberinto.",
     "instrucciones": [
-      "Hacé clic en los números del 1 al 5 en el orden correcto.",
-      "Si te equivocás, empezás de nuevo.",
-      "Ganá un punto por cada secuencia correcta."
+      "Utilizá las flechas del teclado para mover a Bit.",
+      "Bit solo puede avanzar si no hay obstáculos en el camino.",
+      "Completá el nivel llegando al objetivo sin chocar."
     ],
     "temas": [
-      "Pensamiento lógico",
-      "Secuencias numéricas",
-      "Atención y concentración"
+      "Pensamiento computacional",
+      "Condicionales",
+      "Eventos de teclado",
+      "Algoritmos simples"
     ],
-    "autor": "Tu Nombre",
-    "url": "https://game.1001problemas.com/juegos/ordena-numeros/"
+    "autor": "Domingo Perez",
+    "url": "https://game.1001problemas.com/juegos/bit-viajero/"
   }
 }
