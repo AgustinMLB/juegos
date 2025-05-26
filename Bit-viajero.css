@@ -1,40 +1,77 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace;
+  margin: 0;
+  background: #eef;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ascii-table, .ayuda {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.ascii-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ascii-table th, .ascii-table td {
+  border: 1px solid #ccc;
+  padding: 5px;
   text-align: center;
-  background-color: #eef;
 }
 
-#juego {
-  width: 220px;
-  height: 220px;
-  margin: 20px auto;
-  position: relative;
-  background-color: #f4f4f4;
-  border: 2px solid #000;
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  text-align: center;
 }
 
-#bit {
-  width: 20px;
-  height: 20px;
-  background-color: #4caf50;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.1s ease-in-out;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-#objetivo {
-  width: 20px;
-  height: 20px;
-  background-color: #ff5722;
-  position: absolute;
-  top: 200px;
-  left: 200px;
+.cell {
+  width: 50px;
+  height: 50px;
+  background: #444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
-.obstaculo {
-  width: 20px;
-  height: 20px;
-  background-color: #222;
-  position: absolute;
+.cell.revealed {
+  background: #ddd;
+  color: #000;
+  cursor: default;
+}
+
+.cell.mine {
+  background: #e00;
+  color: white;
 }

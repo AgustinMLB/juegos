@@ -1,19 +1,17 @@
 {
-  "bit-viajero": {
-    "nombre": "Bit Viajero",
-    "descripcion": "Juego interactivo que introduce instrucciones condicionales para mover un personaje llamado Bit por un laberinto.",
+  "memoria-ascii": {
+    "nombre": "Juego de Memoria ASCII",
+    "descripcion": "Un juego introductorio para explorar conceptos básicos de lógica computacional.",
     "instrucciones": [
-      "Utilizá las flechas del teclado para mover a Bit.",
-      "Bit solo puede avanzar si no hay obstáculos en el camino.",
-      "Completá el nivel llegando al objetivo sin chocar."
+      "Usa el mouse para revelar las celdas.",
+      "Evita las minas que no corresponden a letras ASCII.",
+      "Identifica las letras binario a binario."
     ],
     "temas": [
-      "Pensamiento computacional",
-      "Condicionales",
-      "Eventos de teclado",
-      "Algoritmos simples"
+      "Pensamiento lógico",
+      "Algoritmos",
+      "Secuencias y condicionales"
     ],
-    "autor": "Domingo Perez",
-    "url": "https://game.1001problemas.com/juegos/bit-viajero/"
+    "url": "https://game.1001problemas.com/memoria-ascii/"
   }
 }

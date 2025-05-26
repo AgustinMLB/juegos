@@ -2,20 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bit Viajero</title>
-  <link rel="stylesheet" href="bit-viajero.css">
+  <title>Buscaminas en Binario</title>
+  <link rel="stylesheet" href="memoria-ascii.css">
 </head>
 <body>
-  <h1>🚀 Bit Viajero</h1>
-  <p>Usá las flechas del teclado para mover a Bit. Llegá al portal sin chocar con los obstáculos.</p>
+  <div class="container">
+    <aside class="ascii-table">
+      <h2>Tabla ASCII</h2>
+      <table>
+        <tr><th>Letra</th><th>ASCII</th><th>Binario</th></tr>
+      </table>
+    </aside>
 
-  <div id="juego">
-    <div id="bit"></div>
-    <div id="objetivo"></div>
-    <div class="obstaculo" style="top: 60px; left: 60px;"></div>
-    <div class="obstaculo" style="top: 100px; left: 60px;"></div>
+    <main>
+      <h1>Buscaminas Binario</h1>
+      <p>Encontrá los bits correctos sin caer en las minas (bits erróneos).</p>
+      <div id="grid" class="grid"></div>
+      <p id="mensaje"></p>
+    </main>
+
+    <aside class="ayuda">
+      <h2>Controles</h2>
+      <ul>
+        <li>Click para revelar</li>
+        <li>Avoid bits que no forman letras ASCII válidas</li>
+      </ul>
+    </aside>
   </div>
 
-  <script src="bit-viajero.js"></script>
+  <script src="memoria-ascii.js"></script>
 </body>
 </html>
